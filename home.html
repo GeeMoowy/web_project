@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Домашняя</title>
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .sidebar {
+            height: 100vh;
+            background-color: black;
+            color: white;
+        }
+        .sidebar a {
+            color: white;
+        }
+        .sidebar a:hover {
+            background-color: #495057;
+        }
+        .dropdown-menu {
+            background-color: #6c757d; /* Серый фон */
+        }
+        .dropdown-item {
+            color: white; /* Белый текст */
+        }
+        .dropdown-item:hover {
+            background-color: #495057; /* Цвет при наведении */
+        }
+    </style>
+</head>
+<body>
+    <div class="d-flex">
+        <nav class="sidebar d-flex flex-column p-3">
+            <h2 style="display: flex; align-items: center;">
+                <img src="/B.png" alt="Логотип" style="width: 40px; height: 40px; margin-right: 5px;">
+                Меню
+            </h2>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" href="home.html">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="category.html">Категории</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="catalog.html">Заказы</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacts.html">Контакты</a>
+                </li>
+            </ul>
+            <div class="mt-auto"> <!-- Этот блок опускает меню в низ -->
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        Пользователь
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="userDropdown">
+                        <li><a class="dropdown-item" href="#">Профиль</a></li>
+                        <li><a class="dropdown-item" href="#">Выход</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <h1 class="text-center mt-4">Главная</h1>
+            <p class="text-center">Вы находитесь на сайте, предназначенном для продажи товаров.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Товар 1</h5>
+                            <p class="card-text">Цена: $100</p>
+                            <p class="card-text">Описание товара 1.</p>
+                            <a href="#" class="btn btn-primary">Купить</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Товар 2</h5>
+                            <p class="card-text">Цена: $150</p>
+                            <p class="card-text">Описание товара 2.</p>
+                            <a href="#" class="btn btn-primary">Купить</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Товар 3</h5>
+                            <p class="card-text">Цена: $200</p>
+                            <p class="card-text">Описание товара 3.</p>
+                            <a href="#" class="btn btn-primary">Купить</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

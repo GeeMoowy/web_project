@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Категории</title>
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .sidebar {
+            height: 100vh;
+            background-color: black;
+            color: white;
+        }
+        .sidebar a {
+            color: white;
+        }
+        .sidebar a:hover {
+            background-color: #495057;
+        }
+
+        .dropdown-menu {
+            background-color: #6c757d; /* Серый фон */
+        }
+        .dropdown-item {
+            color: white; /* Белый текст */
+        }
+        .dropdown-item:hover {
+            background-color: #495057; /* Цвет при наведении */
+        }
+
+        /* Добавляем стили для выравнивания dropdown внизу */
+        .mt-auto {
+            margin-top: auto !important;
+        }
+
+        .dropdown-menu-dark {
+            background-color: #6c757d;
+            color: white;
+        }
+
+        .dropdown-item {
+            color: white;
+        }
+
+        .container {
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        /* Добавляем стили для карточек товаров */
+        .product-card {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="d-flex">
+        <!-- Sidebar (как есть) -->
+        <nav class="sidebar d-flex flex-column p-3">
+            <h2 style="display: flex; align-items: center;">
+                <img src="/B.png" alt="Логотип" style="width: 40px; height: 40px; margin-right: 5px;">
+                Меню
+            </h2>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="category.html">Категории</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="catalog.html">Заказы</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacts.html">Контакты</a>
+                </li>
+            </ul>
+            <div class="mt-auto">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        Пользователь
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="userDropdown">
+                        <li><a class="dropdown-item" href="#">Профиль</a></li>
+                        <li><a class="dropdown-item" href="#">Выход</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Основной контент -->
+        <div class="container">
+            <h1 class="text-center mt-4">Категория 1</h1>
+            <div class="row">
+                <!-- Карточка товара 1 -->
+                <div class="col-md-4 product-card">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Товар 1</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">$100</h6>
+                            <p class="card-text">10 users included, 2 GB of storage, Email support, Help center access</p>
+                            <a href="#" class="btn btn-primary">Купить</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Карточка товара 2 -->
+                <div class="col-md-4 product-card">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Товар 2</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">$100</h6>
+                            <p class="card-text">10 users included, 2 GB of storage, Email support, Help center access</p>
+                            <a href="#" class="btn btn-primary">Купить</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Карточка товара 3 -->
+                <div class="col-md-4 product-card">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Товар 3</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">$100</h6>
+                            <p class="card-text">10 users included, 2 GB of storage, Email support, Help center access</p>
+                            <a href="#" class="btn btn-primary">Купить</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Карточка товара 4 -->
+                <div class="col-md-4 product-card">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Товар 4</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">$100</h6>
+                            <p class="card-text">10 users included, 2 GB of storage, Email support, Help center access</p>
+                            <a href="#" class="btn btn-primary">Купить</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Карточка товара 5 -->
+                <div class="col-md-4 product-card">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Товар 5</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">$100</h6>
+                            <p class="card-text">10 users included, 2 GB of storage, Email support, Help center access</p>
+                            <a href="#" class="btn btn-primary">Купить</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Карточка товара 6 -->
+                <div class="col-md-4 product-card">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Товар 6</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">$100</h6>
+                            <p class="card-text">10 users included, 2 GB of storage, Email support, Help center access</p>
+                            <a href="#" class="btn btn-primary">Купить</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
